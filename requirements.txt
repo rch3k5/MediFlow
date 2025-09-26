@@ -1,0 +1,3 @@
+fastapi[all]
+motor
+python-dotenv
