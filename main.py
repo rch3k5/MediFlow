@@ -4,7 +4,7 @@
 # 2. Install the required libraries: pip install "fastapi[all]" motor python-dotenv
 # 3. Create a file named .env in the same directory.
 # 4. Add your MongoDB connection string to the .env file like this:
-#    MONGO_DETAILS="mongodb+srv://your_username:your_password@your_cluster.mongodb.net/..."
+#    MONGO_DETAILS="ENTER DETAILS HERE"
 # 5. In your terminal, run the command: uvicorn main:app --reload
 
 import os
@@ -183,3 +183,4 @@ async def get_observations_for_patient(patient_id: str):
 
     observations = await observation_collection.find({"patient_id": patient_id}).to_list(1000)
     return observations
+
